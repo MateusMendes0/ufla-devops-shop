@@ -1,0 +1,10 @@
+[Unit]
+Description=Backup diario da UFLA Shop as 03:00
+
+[Timer]
+OnCalendar=*-*-* 03:00:00
+Persistent=true
+Unit=ufla-shop-backup.service
+
+[Install]
+WantedBy=timers.target
