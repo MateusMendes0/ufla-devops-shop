@@ -1,0 +1,29 @@
+# Envia somente os arquivos usados pelo Dockerfile.
+**
+!Dockerfile
+!.dockerignore
+!requirements.txt
+!app/
+!app/**
+!static/
+!static/**
+
+# Mantém estas exclusões mesmo dentro das pastas permitidas.
+.git
+**/.git
+.venv
+**/.venv
+__pycache__
+**/__pycache__
+*.py[cod]
+**/*.py[cod]
+tests
+**/tests
+*.db
+**/*.db
+*.db-*
+**/*.db-*
+.env
+.env.*
+**/.env
+**/.env.*
